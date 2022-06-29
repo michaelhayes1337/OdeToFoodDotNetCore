@@ -1,0 +1,14 @@
+﻿@page "/Restaurants/Detail/{restaurantID:int}"
+@model OdeToFoodDotNetCore.Pages.Restaurants.DetailModel
+@{
+}
+
+<h2>@Model.Restaurant.Name</h2>
+<div>
+        <p>ID: @Model.Restaurant.Id</p>
+        <p>Location: @Model.Restaurant.Location</p>
+        <br />
+        <p>Cuisine: @Model.Restaurant.Cuisine</p>
+        <br />
+    <a asp-page="./List" class="btn btn-default">Return to List</a>
+</div>
